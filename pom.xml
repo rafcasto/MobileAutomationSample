@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>techdojo.org</groupId>
+	<artifactId>mobileautomation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>mobileautomation</name>
+	<description>this is a mobile automation sample</description>
+	<properties>
+		<java.version>21</java.version>
+		<cucumber.version>7.14.0</cucumber.version>
+		<jackson.version>2.16.0</jackson.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+		<artifactId>cucumber-picocontainer</artifactId>
+		<version>${cucumber.version}</version>
+	</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+		<artifactId>cucumber-java</artifactId>
+		<version>${cucumber.version}</version>
+		<scope>test</scope>
+	</dependency>    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java8</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>${jackson.version}</version>
+		<scope>compile</scope>
+	</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+
+		</plugins>
+	</build>
+
+</project>
